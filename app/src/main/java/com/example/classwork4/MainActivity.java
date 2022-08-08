@@ -27,11 +27,15 @@ public class MainActivity extends AppCompatActivity {
         return num1 + num2;
     }
 
-    public static String temperature(int num1){
+    // Thought return type should've been String since instructions 
+    // said "returning the value", not "printing".
+    public static void temperature(int num1) { 
         if (num1 >= 23) {
-            return "Hot";
+            System.out.println("Hot");
+            // return "Hot"; 
         } else {
-            return "Cold";
+            System.out.println("COld");
+            // return "Cold";
         }
     }
 
